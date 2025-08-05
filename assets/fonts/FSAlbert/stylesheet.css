@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FSAlbert';
+    src: url('FSAlbert-Regular.woff2') format('woff2'),
+        url('FSAlbert-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
