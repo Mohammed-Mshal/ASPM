@@ -1,0 +1,199 @@
+/* Global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bodoni MT";
+}
+.container {
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+body {
+  background-color: #000;
+}
+
+/* Nav */
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+nav .container {
+  backdrop-filter: blur(104px);
+  box-shadow: 0px 2px 22px 0px #00000026;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav .container .logo {
+  max-width: 295px;
+  max-height: 139px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+nav .container .logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+nav .container .options {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: clamp(18px, 2vw, 24.61px);
+}
+
+nav .container .options .toggle-language {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .container .options .toggle-language {
+  font-family: "GE Dinar One";
+}
+
+nav .container .options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+nav .container .options button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+nav .popup-menu {
+  position: fixed;
+  left: -0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s all ease;
+  padding-bottom: 80px;
+}
+
+nav .popup-menu.show {
+  pointer-events: all;
+  opacity: 1;
+}
+
+nav .popup-menu .list-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 14px;
+  padding-inline: 20px;
+}
+
+nav .popup-menu .list-menu :is(a, .toggle-inner-list) {
+  font-size: clamp(16px, 2.4vw, 25px);
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+
+nav .popup-menu .list-menu li .toggle-inner-list {
+  margin-bottom: 8px;
+}
+
+nav .popup-menu .list-menu li .toggle-inner-list.show {
+  color: #33a4db;
+}
+
+nav .popup-menu .list-menu li .inner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 40px;
+  opacity: 0;
+  translate: 0 -20px;
+  height: 0;
+  overflow: hidden;
+  transition: translate 0.3s ease, opacity 0.3s ease;
+}
+
+nav .popup-menu .list-menu li:has(.toggle-inner-list.show) .inner-list {
+  opacity: 1;
+  height: auto;
+  translate: 0 0;
+}
+
+nav .popup-menu .list-menu li .inner-list .item-inner {
+  position: relative;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 20px);
+  transition: 0.3s all ease;
+}
+
+nav .popup-menu .list-menu li .inner-list .item-inner:not(:last-child)::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #4b4b4b;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  right: -20px;
+}
+
+nav .popup-menu .list-menu li .item-inner:hover {
+  color: #33a4db;
+}
+
+nav .popup-menu .list-footer-menu {
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav .popup-menu .list-footer-menu a {
+  color: #FFFFFF8f;
+  transition: 0.3s all ease;
+}
+
+nav .popup-menu .list-footer-menu a:hover {
+  color: #FFFFFF;
+}
+@media (max-width: 778px) {
+  nav .container .logo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 668px) {
+  nav .container .options {
+    gap: 16px;
+  }
+}

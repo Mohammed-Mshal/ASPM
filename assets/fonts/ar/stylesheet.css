@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Light.woff2') format('woff2'),
+        url('GEDinarOne-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Medium.woff2') format('woff2'),
+        url('GEDinarOne-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Medium.woff2') format('woff2'),
+        url('GEDinarOne-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-LightItalic.woff2') format('woff2'),
+        url('GEDinarOne-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-MediumItalic.woff2') format('woff2'),
+        url('GEDinarOne-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Light.woff2') format('woff2'),
+        url('GEDinarOne-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
