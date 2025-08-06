@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('scroll',()=>{
-        window.scrollY>=50?
+    document.addEventListener('scroll', () => {
+        window.scrollY >= 50 ?
             document.querySelector('nav').classList.add('scrolling')
             :
             document.querySelector('nav').classList.remove('scrolling')
-        
+
     })
     const menu = document.querySelector('nav .popup-menu')
     const toggleMenu = document.querySelector('nav .options .toggle-menu')
     const toggleInnerList = document.querySelectorAll('nav .popup-menu .list-menu li .toggle-inner-list')
-    
+
     toggleMenu.addEventListener('click', () => {
         menu.classList.toggle('show');
         const nav = document.querySelector('nav');
         const containerPopup = menu.querySelector('.container-popup');
         function handleClickOutside(e) {
-            if (e.target.closest('.popup-menu')&&!e.target.closest('.container-popup') && !e.target.closest('.toggle-menu')) {
+            if (e.target.closest('.popup-menu') && !e.target.closest('.container-popup') && !e.target.closest('.toggle-menu')) {
                 menu.classList.remove('show');
                 document.removeEventListener('click', handleClickOutside);
             }
@@ -38,5 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const currentYear = document.querySelector('footer .current-year')
-    currentYear.innerHTML=new Date(Date.now()).getFullYear()
+    currentYear.innerHTML = new Date(Date.now()).getFullYear()
+    if ($("#datepicker").length) {
+        $("#datepicker").datepicker();
+    }
 })
