@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-    document.querySelectorAll('select').forEach(function(select) {
+    document.querySelectorAll('select').forEach(function (select) {
         if (select.hasAttribute('data-placeholder')) {
             NiceSelect.bind(select, { placeholder: select.getAttribute('data-placeholder') });
         } else {

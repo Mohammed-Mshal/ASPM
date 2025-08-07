@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
     <link rel="stylesheet" href="assets/css/nice-select2.css">
     <link rel="stylesheet" href="assets/css/jqueryui.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="assets/fonts/ar/stylesheet.css">
 
     <link rel="stylesheet" href="assets/css/index.css">
-    <title>ASPM | BOOKING DETAIL</title>
+    <title>ASPM | EVENTS</title>
 </head>
 
 <body>
@@ -130,173 +131,162 @@
     <div class="inner-page events">
         <div class="filter-event">
             <div class="container">
-                <div class="filter-wrapper flex items-center gap-10">
-                    <select name="month" id="month">
-                    <option value="01" selected>January</option>
-                    <option value="02">February</option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                    </select>
-                    <select name="year" id="year">
-                        <option value="01" selected>2025</option>
-                        <option value="02">2024</option>
-                        <option value="03">2023</option>
-                        <option value="04">2022</option>
-                        <option value="05">2021</option>
-                        <option value="06">2020</option>
-                        <option value="07">2019</option>
-                        <option value="08">2018</option>
-                        <option value="09">2017</option>
-                        <option value="10">2016</option>
-                        <option value="11">2015</option>
-                        <option value="12">2014</option>
-                    </select>
+                <div class="filter-wrapper flex items-center justify-center gap-10">
+                    <div class="month filter">
+                        <select name="month" id="month">
+                            <option value="01" selected>January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="year filter">
+                        <select name="year" id="year">
+                            <option value="01" selected>2025</option>
+                            <option value="02">2024</option>
+                            <option value="03">2023</option>
+                            <option value="04">2022</option>
+                            <option value="05">2021</option>
+                            <option value="06">2020</option>
+                            <option value="07">2019</option>
+                            <option value="08">2018</option>
+                            <option value="09">2017</option>
+                            <option value="10">2016</option>
+                            <option value="11">2015</option>
+                            <option value="12">2014</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="left-side">
-                <h1 class="title">
-                    Events
-                </h1>
-                <div class="content-box">
-                    <div class="box">
-                        <h2 class="title-box">
-                            Standard Tour
-                        </h2>
-                        <div class="description">
-                            Explore Kuwalt's rich history on an all-inclusive tour of Al Salam Palace Museum. Our expert
-                            guides will take you on a journey through the palace's story and the history of the land.
-                            It's the perfect way to experience Kuwait's past.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <h2 class="title-box">
-                            Things to consider before booking
-                        </h2>
-                        <div class="description">
-                            <ul>
-                                <li class="red">
-                                    Kids under the age of 12 are not allowed inside the Museum.
-                                </li>
-                                <li class="red">
-                                    It is prohibited to bring food and drink into the Museum
-                                </li>
-                                <li class="green">
-                                    There is a multi-story parking on the premises
-                                </li>
-                                <li class="green">
-                                    There is a coffee shop at the main lobby
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="right-side">
-                <div class="details">
-                    <form action="" class="detail">
-                        <h2 class="title">
-                            Government & Private Entities
-                        </h2>
-                        <div class="description">
-                            Explore Kuwalt's rich history on an all-inclusive tour of Al Salam Palace Museum. Our expert
-                            guides will take you on a journey through the palace's story and the history of the land.
-                            It's
-                            the perfect way to experience Kuwait's past.
-                        </div>
-                        <div class="groups-form">
-                            <div class="group-form">
-                                <label for="start-date">
-                                    Start date
-                                </label>
-                                <div class="wrapper-input">
-                                    <input type="text" placeholder="Select Date" name="start-date" id="datepicker">
-                                    <div class="icon">
-                                        <img src="assets/images/date.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="wrapper-input">
-                                    <input type="text"  placeholder="Select time" id="timepicker">
-                                    <div class="icon">
-                                        <img src="assets/images/time.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group-form">
-                                <label for="start-date">
-                                    Start date
-                                </label>
-                                <div class="wrapper-input">
-                                    <select name="seats" id="seats">
-                                        <option value="1">
-                                            1
-                                        </option>
-                                        <option value="2">
-                                            2
-                                        </option>
-                                    </select>
-                                </div>
-                               
-                            </div>
-                            <button type="submit" class="button-submit">
-                                Book now
-                            </button>
-                        </div>
-                    </form>
-                    <div class="img-books">
-                        <img src="assets/images/books1.jpg" alt="">
+        <div class="events-content">
+            <div class="container">
+                <div class="left-side">
+                    <h1 class="title">
+                        Events
+                    </h1>
+                    <div class="wrapper-calendar">
+                        <div id="datepicker" class="calendar"></div>
                     </div>
                 </div>
-                <div class="list-info flex items-center lg:gap-8 gap-4 flex-wrap">
-                    <div class="item flex items-center gap-2">
-                        <div class="image">
-                            <img src="assets/images/info-icon.svg" alt="">
+                <div class="right-side">
+                    <div class="list-events">
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
                         </div>
-                        <span class="xl:text-3xl lg:text-2xl md:text-xl">
-                            Dress Policy
-                        </span>
-                    </div>
-                    <div class="item flex items-center gap-2">
-                        <div class="image">
-                            <img src="assets/images/info-icon.svg" alt="">
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
                         </div>
-                        <span class="xl:text-3xl lg:text-2xl md:text-xl">
-                            Age Restrictions
-                        </span>
-                    </div>
-                    <div class="item flex items-center gap-2">
-                        <div class="image">
-                            <img src="assets/images/info-icon.svg" alt="">
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
                         </div>
-                        <span class="xl:text-3xl lg:text-2xl md:text-xl">
-                            Parking
-                        </span>
-                    </div>
-                    <div class="item flex items-center gap-2">
-                        <div class="image">
-                            <img src="assets/images/info-icon.svg" alt="">
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
                         </div>
-                        <span class="xl:text-3xl lg:text-2xl md:text-xl">
-                            Food
-                        </span>
-                    </div>
-                    <div class="item flex items-center gap-2">
-                        <div class="image">
-                            <img src="assets/images/info-icon.svg" alt="">
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
                         </div>
-                        <span class="xl:text-3xl lg:text-2xl md:text-xl">
-                            Opening Hours
-                        </span>
+                        <div class="event-item">
+                            <div class="image-event w-full h-[267px]">
+                                <img src="assets/images/books1.jpg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="body-event">
+                                <h2 class="title-event">
+                                    Discover Kuwait's History
+                                </h2>
+                                <h4 class="date">
+                                    12 May 2025
+                                </h4>
+                                <div class="description-event">
+                                    Explore Kuwait's rich history on an all-inclusive tour of Al Salam Palace Museum.
+                                    Our expert guides will take you on a journey through the palace's story and the
+                                    history of the land. It's the perfect way to experience Kuwait's past.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
