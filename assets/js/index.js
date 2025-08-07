@@ -35,11 +35,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-
+    document.querySelectorAll('select').forEach(function(select) {
+        if (select.hasAttribute('data-placeholder')) {
+            NiceSelect.bind(select, { placeholder: select.getAttribute('data-placeholder') });
+        } else {
+            NiceSelect.bind(select);
+        }
+    });
 
     const currentYear = document.querySelector('footer .current-year')
     currentYear.innerHTML = new Date(Date.now()).getFullYear()
     if ($("#datepicker").length) {
         $("#datepicker").datepicker();
+    }
+    if ($("#timepicker").length) {
+        $("#timepicker").timepicker({
+            timeFormat: 'H:i',
+            interval: 30,
+            minTime: '0:00',
+            maxTime: '24:00',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true,
+        });
     }
 })
