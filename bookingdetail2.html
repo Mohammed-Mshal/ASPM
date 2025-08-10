@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
+    <link rel="stylesheet" href="assets/css/jqueryui.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Add fonts -->
+    <link rel="stylesheet" href="assets/fonts/en/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/FSAlbert/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/ar/stylesheet.css">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>ASPM | BOOKING DETAIL</title>
+</head>
+
+<body>
+    <nav class="dark-nav">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <div class="options">
+                <button class="profile-button">
+                    <img src="assets/images/profile.svg" alt="Search">
+                </button>
+                <a href="#" class="toggle-language">
+                    عربي
+                </a>
+                <button class="toggle-menu">
+                    <img src="assets/images/menu.svg" class="open" alt="">
+                    <img src="assets/images/close.svg" class="close" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="popup-menu">
+            <div class="container-popup">
+                <ul class="list-menu">
+                    <li>
+                        <a href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <button class="toggle-inner-list">
+                            Visit
+                            <img src="assets/images/arrow-dropdown.svg" alt="">
+                        </button>
+                        <div class="inner-list">
+                            <a href="#" class="item-inner">
+                                Standard Tour
+                            </a>
+                            <a href="#" class="item-inner">
+                                VIP Tour
+                            </a>
+                            <a href="#" class="item-inner">
+                                School Tours
+                            </a>
+                            <a href="#" class="item-inner">
+                                Government and Private
+                            </a>
+                            <a href="#" class="item-inner">
+                                Entities
+                            </a>
+                            <a href="#" class="item-inner">
+                                E-Library Booking
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="toggle-inner-list">
+                            Explore
+                            <img src="assets/images/arrow-dropdown.svg" alt="">
+                        </button>
+                        <div class="inner-list">
+                            <a href="#" class="item-inner">
+                                Our Story
+                            </a>
+                            <a href="#" class="item-inner">
+                                Gallery
+                            </a>
+                            <a href="#" class="item-inner">
+                                Museum Map
+                            </a>
+                            <a href="#" class="item-inner">
+                                FAQS
+                            </a>
+                            <a href="#" class="item-inner">
+                                Contact
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Exhibitions
+                        </a>
+                    </li>
+                </ul>
+                <div class="list-footer-menu">
+                    <a href="#">
+                        Privacy and Policy
+                    </a>
+                    <a href="#">
+                        Terms of Use
+                    </a>
+                    <a href="#">
+                        FAQ
+                    </a>
+                    <a href="#">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="inner-page booking-detail booking-detail-2">
+        <div class="bg-fixed">
+            <video src="assets/images/TreatmentBooking.mp4" muted loop autoplay></video>
+        </div>
+        <div class="container">
+            <div class="left-side">
+                <h1 class="title">
+                    Event Booking
+                </h1>
+                <div class="content-box">
+                    <div class="box">
+                        <h2 class="title-box">
+                            Event Overview
+                        </h2>
+                        <div class="description">
+                            The Kuwait National Day Reception at Al Salam Palace is a prestigious annual event hosted by His Highness the Emir of Kuwait to celebrate the country’s independence. The evening includes diplomatic receptions, cultural performances, and a grand banquet honoring Kuwait’s heritage and achievements.
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 class="title-box">
+                            Note for the Public
+                        </h2>
+                        <div class="description">
+                            <ul>
+                                <li class="black">
+                                    This event is not open to the public.
+                                </li>
+                                <li class="black">
+                                    Citizens can watch the ceremony live on national television.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="details">
+                    <form action="" class="detail">
+                        <h2 class="title flex items-center gap-4">
+                            <a href="#" class="">
+                                <img src="assets/images/left-back.svg" alt="">
+                            </a>
+                            Kuwait National Day Reception
+                        </h2>
+                        <div class="group-info">
+                            <h3 class="subtitle">
+                                Event details 
+                            </h3>
+                            <ul>
+                                <li>Date : February 25, 2025</li>
+                                <li>Time : 7:00 PM – 10:30 PM</li>
+                                <li>Entry : Invitation Only (Official Dignitaries & Guests)</li>
+                            </ul>
+                        </div>
+                        <div class="groups-form">
+                            <h3 class="subtitle">
+                                Your information
+                            </h3>
+                            <div class="group-form">
+                                <label for="start-date">
+                                    Start date
+                                </label>
+                                <div class="group-inputs grid grid-cols-1 lg:grid-cols-2 gap-4 gap">
+                                    <div class="wrapper-input">
+                                        <input type="text" placeholder="Select Date" name="start-date" id="datepicker" class="min-w-[100px]">
+                                        <div class="icon">
+                                            <img src="assets/images/date.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-input">
+                                        <input type="text"  placeholder="Select time" id="timepicker" class="min-w-[100px]">
+                                        <div class="icon">
+                                            <img src="assets/images/time.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-inputs grid grid-cols-1 lg:grid-cols-2 gap-4 gap">
+                                    <div class="wrapper-input flex flex-col gap-3">
+                                        <label for="first-name">
+                                            First Name*
+                                        </label>
+                                        <input type="text" placeholder="First Name" name="first-name" id="first-name" class="min-w-[100px]">
+                                    </div>
+                                    <div class="wrapper-input flex flex-col gap-3">
+                                        <label for="last-name">
+                                            Last Name*
+                                        </label>
+                                        <input type="text" placeholder="Last Name" name="last-name" id="last-name" class="min-w-[100px]">
+                                    </div>
+                                </div>
+                                <div class="group-inputs grid grid-cols-1 lg:grid-cols-2 gap-4 gap">
+                                    <div class="wrapper-input flex flex-col gap-3">
+                                        <label for="phone">
+                                            Phone*
+                                        </label>
+                                        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="min-w-[100px]" inputmode="numeric" pattern="[0-9]*" autocomplete="tel" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,9);">
+                                    </div>
+                                    <div class="wrapper-input flex flex-col gap-3">
+                                        <label for="email">
+                                            Email Address*
+                                        </label>
+                                        <input type="email" placeholder="Email Address" name="email" id="email" class="min-w-[100px]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-form">
+                                <label for="start-date">
+                                    Seats*
+                                </label>
+                                <div class="wrapper-input">
+                                    <select name="seats" id="seats">
+                                        <option value="1">
+                                            1
+                                        </option>
+                                        <option value="2">
+                                            2
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group-form">
+                                <label for="start-date">
+                                    Country*
+                                </label>
+                                <div class="wrapper-input">
+                                    <select name="seats" id="seats">
+                                        <option value="Kuwait">
+                                            Kuwait
+                                        </option>
+                                        <option value="Syria">
+                                            Syria
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group-checkbox">
+                                <input type="checkbox" id="subscribe" class="hidden">
+                                <label for="subscribe" class="flex items-center gap-2">
+                                    <div class="checkbox-mark w-[24px] h-[24px] flex">
+                                        <img src="assets/images/checkmark.svg" class="w-full h-full object-contain" alt="">
+                                    </div>
+                                    <span class="">
+                                        Don’t miss a thing! Subscribe our Newsletter
+                                    </span>
+                                </label>
+                            </div>
+                            <a href="£" type="submit" class="signin">
+                                Or sign in \ Register
+                            </a>
+                        </div>
+                    </form>
+                    <div class="order-form">
+                        <h3 class="subtitle">
+                            Your Order
+                        </h3>
+                        <div class="info-order">
+                            <div class="row-info">
+                                <div class="title-row">
+                                    Product
+                                </div>
+                                <div class="value-row">
+                                    First Name 
+                                </div>
+                            </div>
+                            <div class="row-info">
+                                <div class="title-row flex-flex-col">
+                                    <div>
+                                        Standard Tour - Arabic - 2 hours tour
+                                    </div>
+                                    <span>
+                                        Booking on 17/04/2025 12:00 pm
+                                    </span>
+                                </div>
+                                <div class="value-row">
+                                    K.D8.000 
+                                </div>
+                            </div>
+                            <div class="row-info">
+                                <div class="title-row flex-flex-col">
+                                    x1
+                                </div>
+                            </div>
+                            <div class="row-info">
+                                <div class="title-row">
+                                    Subtotal
+                                </div>
+                                <div class="value-row">
+                                    K.D8.000
+                                </div>
+                            </div>
+                            <div class="row-info">
+                                <div class="title-row">
+                                    Total
+                                </div>
+                                <div class="value-row">
+                                    K.D8.000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-type">
+                            <div class="group-radio">
+                                <input type="radio" name="pay-type" value="knet" id="knet">
+                                <label for="knet">
+                                    <div class="radio-mark"></div>
+                                    <div class="name-pay">
+                                        KNET
+                                    </div>
+                                    <div class="icons-pay">
+                                        <div class="icon">
+                                            <img src="assets/images/knet.png" alt="">
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="group-radio">
+                                <input type="radio" name="pay-type" value="knet" id="card">
+                                <label for="card">
+                                    <div class="radio-mark"></div>
+                                    <div class="name-pay">
+                                        Card
+                                    </div>
+                                    <div class="icons-pay">
+                                        <div class="icon">
+                                            <img src="assets/images/VisaCard.png" alt="">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="assets/images/mastercard.png" alt="">
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="description-pay">
+                            Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+                        </div>
+                        <button class="main-button">
+                            Place order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="copyright-text">
+                © <span class="current-year"></span> Al Salam Palace. All Rights Reserved
+            </div>
+            <div class="social">
+                <a href="#">
+                    <img src="assets/images/x.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/images/youtube.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/images/instagram.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/animation-config.js"></script>
+</body>
+
+</html>
