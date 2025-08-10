@@ -1142,7 +1142,7 @@ li.ui-timepicker-selected {
 .inner-page.events .filter-event {
   display: flex;
   justify-content: flex-end;
-  background: url(../images/pattern.svg) no-repeat left center;
+  background: url(../images/pattern.svg) no-repeat center center;
   width: 100%;
   margin-top: 20px;
 }
@@ -1388,7 +1388,7 @@ li.ui-timepicker-selected {
 
 .inner-page.events .header-details {
   display: flex;
-  background: url(../images/pattern.svg) no-repeat left center;
+  background: url(../images/pattern.svg) no-repeat center center;
   width: 100%;
   margin-top: 20px;
 }
