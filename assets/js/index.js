@@ -59,4 +59,35 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollbar: true,
         });
     }
+    const infoYearSliderEle = document.querySelector('.info-year-swiper')
+    const historySliderEle = document.querySelector('.swiper.history-slider')
+    if (historySliderEle && infoYearSliderEle) {
+        const historySlider = new Swiper(historySliderEle, {
+            spaceBetween: 30,
+            centeredSlides: true,
+            watchSlidesProgress: true,
+            allowTouchMove: false,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                },
+                778: {
+                    slidesPerView: 4,
+                },
+                300: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        const infoYearSlider = new Swiper(infoYearSliderEle, {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: historySlider,
+              },
+        });
+    }
 })
