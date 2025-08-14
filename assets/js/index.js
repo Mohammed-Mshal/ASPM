@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const currentYear = document.querySelector('footer .current-year')
-    currentYear.innerHTML = new Date(Date.now()).getFullYear()
+    if (currentYear) {
+        currentYear.innerHTML = new Date(Date.now()).getFullYear()
+    }
     if ($("#datepicker").length) {
         $("#datepicker").datepicker();
     }
@@ -87,7 +89,116 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             thumbs: {
                 swiper: historySlider,
-              },
+            },
         });
     }
+    const gallerySliderEleS = document.querySelectorAll('.gallery .gallery-container .swiper')
+    let swipersGallery = []
+    gallerySliderEleS.forEach((gallerySliderEle) => {
+        const gallerySlider = new Swiper(gallerySliderEle, {
+            grabCursor: true,
+            centeredSlides: true,
+            effect: 'coverflow',
+            breakpoints: {
+                800: {
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    slidesPerView: 3,
+
+                },
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                }
+            }
+        });
+        swipersGallery.push(gallerySlider)
+    });
+
+
+    const galleryTabs = document.querySelectorAll('.gallery .gallery-tabs .tab-item')
+    galleryTabs.forEach((galleryTab) => {
+        galleryTab.addEventListener('click', () => {
+            galleryTabs.forEach((e) => e.classList.remove('active'))
+            galleryTab.classList.add('active')
+            const tabs = document.querySelectorAll('.gallery .wrapper-tap .gallery-container')
+            swipersGallery.forEach((e) => e.destroy())
+            tabs.forEach((e) => {
+                if (e.id === galleryTab.getAttribute('data-tab')) {
+                    e.classList.add('active')
+                    const gallerySliderEle = document.querySelector(`.gallery .gallery-container#${e.id} .swiper`)
+                    new Swiper(gallerySliderEle, {
+                        grabCursor: true,
+                        effect: 'coverflow',
+                        centeredSlides: true,
+                        breakpoints: {
+                            800: {
+                                coverflowEffect: {
+                                    rotate: 50,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: true,
+                                },
+                                slidesPerView: 3,
+
+                            },
+                            300: {
+                                slidesPerView: 1,
+                                spaceBetween: 24,
+                                coverflowEffect: {
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: true,
+                                },
+                            }
+                        }
+                    });
+                }
+                else {
+                    e.classList.remove('active')
+                }
+            })
+        })
+    })
+
+
+    const questions = document.querySelectorAll('.faq-question');
+    const answers = document.querySelectorAll('.faq-answer');
+    // Initialize all answers as closed
+    answers.forEach(function(ans) {
+        ans.classList.remove('open');
+    });
+    questions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var answer = btn.nextElementSibling;
+            var isOpen = answer.classList.contains('open');
+            // Close all answers
+            answers.forEach(function(ans) {
+                ans.classList.remove('open');
+            });
+            questions.forEach(function(q) {
+                q.classList.remove('active');
+            });
+            // Toggle current
+            if (!isOpen) {
+                answer.classList.add('open');
+                btn.classList.add('active');
+            }
+        });
+    });
 })
